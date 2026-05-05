@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260505-145121-4mw60i84wpll-service
+spec:
+  selector:
+    app: enterprise-system-20260505-145121-4mw60i84wpll
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
